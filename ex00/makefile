@@ -2,7 +2,7 @@
 CXX := g++
 
 # Compiler flags
-CXXFLAGS := -Wall -Wextra -O2
+CXXFLAGS := -Wall -Wextra -Werror -O2
 
 # The name of our executable
 TARGET := megaphone
