@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.cpp                                      :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jroseiro <jroseiro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/22 22:00:31 by jroseiro          #+#    #+#             */
-/*   Updated: 2025/02/24 18:28:37 by jroseiro         ###   ########.fr       */
+/*   Updated: 2025/02/24 20:13:16 by jroseiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+
 
 // can be private / public, depending on who can access this data / change it
 // a class is a blue print for objects ( a bit like a struct )
@@ -39,31 +39,21 @@ class Dog{  -> name of the class
 }
 */
 
-class	PhoneBook{
 
-	int		contacts[];
 
-	void	ADD(){
 
-	}
 
-	void	SEARCH(){
-
-	}
-	void	EXIT(){
-		
-	}
-} ;
-
-class Contact {
-	std::string	FirstName;
-	std::string	LastName;
-	std::string	Nickname;
-} ;
-
+static int	print_ui(){
+	
+}
 
 int main() {
-
+	while (1) {
+		print_ui();
+		//scan for user input
+		if (1)
+			break;
+	}
 
 	return 0;
 }
