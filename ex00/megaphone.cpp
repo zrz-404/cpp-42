@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <iostream>
-#include <ctype.h>
 
 
 /* original solution *
@@ -19,7 +18,7 @@ int	main(int argc, char **argv)
 {
 	int i = 1;
 	int c = 0;
-	
+
 	if (argc < 2)
 	return 1;
 	while (argv[i])

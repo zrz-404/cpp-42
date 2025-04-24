@@ -1,8 +1,8 @@
 # The compiler we want to use
-CXX := g++
+CXX := c++
 
 # Compiler flags
-CXXFLAGS := -Wall -Wextra -Werror -O2
+CXXFLAGS := -Wall -Wextra -Werror -O2 -std=c++98
 
 # The name of our executable
 TARGET := megaphone

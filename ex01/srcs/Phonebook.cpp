@@ -1,29 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Phonebook.cpp                                      :+:      :+:    :+:   */
+/*   phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jroseiro <jroseiro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/24 18:37:40 by jroseiro          #+#    #+#             */
-/*   Updated: 2025/02/24 20:20:26 by jroseiro         ###   ########.fr       */
+/*   Created: 2025/02/22 22:00:31 by jroseiro          #+#    #+#             */
+/*   Updated: 2025/02/22 22:12:44 by jroseiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./incs/Phonebook.hpp"
+#include <iostream>
 
-class	PhoneBook{
+// can be private / public, depending on who can access this data / change it
+// a class is a blue print for objects ( a bit like a struct )
+//each object has multiple attributes and methods
+//attributes are characteristics
+//methods are things it can do
+/* example:
 
-	int		contacts[8];
-	
-	void	ADD(){
-		
-	}
+class Dog{  -> name of the class
+	public :
+		std::string	name;	-> attribute
+		std::string	breed;	-> attribute -> these are just like a member of a struct, providing information,
+		int age;			-> attribute	may be changeable depending on if these attributes are public or private
 
-	void	SEARCH(){
+		void fetch(){
+			std::cout << "This dog is playing fetch\n";	`-> method
+		}
 
-	}
-	void	EXIT(){
-		
-	}
+		void run(){
+			std::cout << "This dog is running\n";	`-> method -> these behave more like a function
+		}
+
+		void eat(){
+			std::cout << "This dog is eating\n";	`-> method
+		}
+}
+*/
+
+class PhoneBook{
+
 } ;
+
+
+int main() {
+
+
+	return 0;
+}
