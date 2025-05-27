@@ -6,7 +6,7 @@
 /*   By: zrz <zrz@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 16:12:55 by jroseiro          #+#    #+#             */
-/*   Updated: 2025/05/27 13:38:58 by zrz              ###   ########.fr       */
+/*   Updated: 2025/05/27 15:49:26 by zrz              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,9 @@ class Zombie {
 	private:
 		std::string name;
 	public:
-		Zombie(std::string name); // Constructor to initialize the name
-   		~Zombie();                // Destructor
+		Zombie();
+		Zombie(const std::string& nameVal); // Constructor to initialize the name
+   		~Zombie();							// Destructor
 		
 		void announce(void);
 
@@ -28,3 +29,4 @@ class Zombie {
 
 Zombie* newZombie(std::string name);
 void randomChump(std::string name);
+Zombie* zombieHorde(int N, std::string name);

@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zrz <zrz@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/26 16:12:55 by jroseiro          #+#    #+#             */
-/*   Updated: 2025/05/27 13:38:58 by zrz              ###   ########.fr       */
+/*   Created: 2025/05/26 16:12:50 by jroseiro          #+#    #+#             */
+/*   Updated: 2025/05/27 13:58:59 by zrz              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#include "Zombie.hpp"
 
-#include <string>
-#include <iostream>
+/*  Creates a zombie on the stack
+	Makes it announce itself
+	stackZombie is destroyed automatically when this function ends
+*/ 
 
-class Zombie { 
-	private:
-		std::string name;
-	public:
-		Zombie(std::string name); // Constructor to initialize the name
-   		~Zombie();                // Destructor
-		
-		void announce(void);
-
-};
-
-Zombie* newZombie(std::string name);
-void randomChump(std::string name);
+void randomChump(std::string name) {
+	Zombie stackZombie = Zombie(name);
+	stackZombie.announce();
+}
