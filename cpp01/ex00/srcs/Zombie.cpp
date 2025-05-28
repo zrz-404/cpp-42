@@ -6,7 +6,7 @@
 /*   By: zrz <zrz@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 16:01:41 by jroseiro          #+#    #+#             */
-/*   Updated: 2025/05/27 13:50:24 by zrz              ###   ########.fr       */
+/*   Updated: 2025/05/28 11:20:47 by zrz              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Zombie::Zombie(std::string name) : name(name) {
 
 // Destructor
 Zombie::~Zombie() {
-    std::cout << this->name << ": Destroyed..." << std::endl; // Example debug message [cite: 1]
+    std::cout << this->name << ": Destroyed..." << std::endl; // Example debug message
 }
 
 // Announce method

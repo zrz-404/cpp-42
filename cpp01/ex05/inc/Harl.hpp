@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zrz <zrz@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/27 15:05:48 by zrz               #+#    #+#             */
-/*   Updated: 2025/05/28 11:21:24 by zrz              ###   ########.fr       */
+/*   Created: 2025/05/28 11:19:05 by zrz               #+#    #+#             */
+/*   Updated: 2025/05/28 11:24:50 by zrz              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#pragma once
+#include <string>
+#include <iostream>
 
-Zombie* zombieHorde(int N, std::string name) {
-    if (N <= 0) {
-        std::cerr << "Error: Number of zombies must be positive." << std::endl;
-        return NULL;
-    }
-    Zombie* horde = new Zombie[N];
-    for (int i = 0; i < N; ++i) {
-        horde[i] = Zombie(name);
-    }
+class Harl {
+	private:
+		void debug(void);
+		void info(void);
+		void warning(void);
+		void error(void);
 
-    return horde;
-}
+		// std::string level_strings[4];
+		// void (Harl::*member_functions[4])(void); 
+
+	public:
+		Harl();
+		~Harl();
+		void complain(std::string level);
+};

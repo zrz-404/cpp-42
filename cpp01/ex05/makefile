@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jroseiro <jroseiro@student.42.fr>          +#+  +:+       +#+         #
+#    By: zrz <zrz@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 16:02:51 by jroseiro          #+#    #+#              #
-#    Updated: 2025/05/26 16:17:46 by jroseiro         ###   ########.fr        #
+#    Updated: 2025/05/28 11:29:31 by zrz              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,14 +17,14 @@ CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98 -g # Added -g for debugging
 
 # The name of our executable
-TARGET := ex00
+TARGET := Harl
 
 # Source directories
-SRCS_DIR := src
+SRCS_DIR := srcs
 INC_DIR := inc
 
 # Source files - main.cpp in SRCS_DIR, class implementations in SRCS_DIR
-SOURCES := $(SRCS_DIR)/main.cpp $(SRCS_DIR)/Zombie.cpp $(SRCS_DIR)/newZombie.cpp $(SRCS_DIR)/randomChump.cpp
+SOURCES := $(SRCS_DIR)/Harl.cpp $(SRCS_DIR)/main.cpp
 
 # Object files
 OBJ_DIR := obj

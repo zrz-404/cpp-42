@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zrz <zrz@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/27 15:05:48 by zrz               #+#    #+#             */
-/*   Updated: 2025/05/28 11:21:24 by zrz              ###   ########.fr       */
+/*   Created: 2025/05/28 09:34:34 by zrz               #+#    #+#             */
+/*   Updated: 2025/05/28 11:19:45 by zrz              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#pragma once
 
-Zombie* zombieHorde(int N, std::string name) {
-    if (N <= 0) {
-        std::cerr << "Error: Number of zombies must be positive." << std::endl;
-        return NULL;
-    }
-    Zombie* horde = new Zombie[N];
-    for (int i = 0; i < N; ++i) {
-        horde[i] = Zombie(name);
-    }
+#include "Weapon.hpp"
 
-    return horde;
-}
+class HumanA {
+    private:
+        std::string name;
+        Weapon& weapon; // Reference to a weapon
+    public:
+        HumanA(const std::string& name, Weapon& weapon);
+        ~HumanA();
+        void attack() const;
+};
