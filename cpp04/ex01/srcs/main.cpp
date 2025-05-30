@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zrz <zrz@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: jroseiro <jroseiro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 10:57:03 by zrz               #+#    #+#             */
-/*   Updated: 2025/05/29 17:00:20 by zrz              ###   ########.fr       */
+/*   Updated: 2025/05/30 11:18:57 by jroseiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,8 @@ int main() {
     std::cout << "--- Deleting Animals from Array ---" << std::endl;
     for (int i = 0; i < N_ANIMALS; ++i) {
         std::cout << "Deleting animal at index " << i << " (" << animals[i]->getType() << ")" << std::endl;
-        delete animals[i]; // Virtual destructor in Animal ensures correct derived destructor is called
-        animals[i] = NULL; // Good practice
+        delete animals[i]; // Virtual destructor in Animal makes surte correct destructor is called
+        animals[i] = NULL;
         std::cout << std::endl;
     }
 

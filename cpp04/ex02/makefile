@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: zrz <zrz@student.42.fr>                    +#+  +:+       +#+         #
+#    By: jroseiro <jroseiro@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 16:02:51 by jroseiro          #+#    #+#              #
-#    Updated: 2025/05/30 10:23:53 by zrz              ###   ########.fr        #
+#    Updated: 2025/05/30 11:16:21 by jroseiro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CXX := c++
 CXXFLAGS := -Wall -Wextra -Werror -std=c++98
 
 # The name of our executable
-TARGET := ex01
+TARGET := ex02
 
 # Source directories
 SRCS_DIR := srcs

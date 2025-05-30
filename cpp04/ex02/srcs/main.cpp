@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zrz <zrz@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: jroseiro <jroseiro@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 10:57:03 by zrz               #+#    #+#             */
-/*   Updated: 2025/05/30 10:38:49 by zrz              ###   ########.fr       */
+/*   Updated: 2025/05/30 10:58:29 by jroseiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,8 @@ int main() {
         std::cout << std::endl;
     }
 
-    // Deep copy tests for Dog and Cat should still work as in ex01
-    std::cout << "--- Test: Deep Copy for Dog (should still work) ---" << std::endl;
+    
+    std::cout << "--- Test: Deep Copy for Dog ---" << std::endl; //should still work
     Dog dog_original;
     dog_original.setIdea(0, "Original dog idea: Bark at squirrel");
     dog_original.printBrainIdeas();
